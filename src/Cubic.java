@@ -12,6 +12,9 @@ public class Cubic {
 		System.out.println("입력하세요: "); // 단어, 이동할 숫자 , 이동할 방향 입력받기
 		word = sc.next();
 		num = sc.nextInt();
+		while(num < -100 || num > 100){
+			num = sc.nextInt();
+		}
 		direction = sc.next().charAt(0);
 		
 		String[] array_word = word.split(""); // word를 한 단어씩 배열에 담아야함
